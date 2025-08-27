@@ -1,0 +1,7 @@
+services:
+    Hp\Cmsaddictional\Form\Modifier\MmCmsPageFormModifier:
+        autowire: true
+        public: true
+        arguments:
+            $formBuilderModifier: '@form.form_builder_modifier'
+    

@@ -1,0 +1,64 @@
+{% extends '@PrestaShop/Admin/layout.html.twig' %}
+
+{% block content %}
+	<div class="card">
+		<div class="card-header">
+			<h3>Create/Edit</h3>
+		</div>
+		{{ form_start(form) }}
+		<div class="card-body">
+
+			{{ form_row(form.display_type) }}
+
+			<div id="brand-field" style="display: none;">
+				{{ form_row(form.brand) }}
+			</div>
+
+			<div id="category-field" style="display: none;">
+				{{ form_row(form.category) }}
+			</div>
+		</div>
+		<div class="card-footer">
+			<div class="d-flex justify-content-between align-items-center">
+				<a class="btn btn-secondary" href="{{ path('mm_product_brand_index' )}}">Cancel</a>
+				<button type="submit" class="btn btn-primary">Save</button>
+
+			</div>
+		</div>
+		{{ form_end(form, {'render_rest': false}) }}
+	</div>
+	{% block javascripts %}
+		{{ parent() }}
+		<script>
+			document.addEventListener('DOMContentLoaded', () => {
+				const displayTypeRadios = document.querySelectorAll('[name="brand_product[display_type]"]');
+				const brandField = document.getElementById('brand-field');
+				const categoryField = document.getElementById('category-field');
+
+				// Function to toggle the visibility of the brand/category fields
+				const toggleFields = () => {
+				const selectedValue = [... displayTypeRadios].find(radio => radio.checked) ?. value;
+				if (selectedValue === 'brand') {
+				brandField.style.display = 'block';
+				categoryField.style.display = 'none';
+				} else if (selectedValue === 'category') {
+				brandField.style.display = 'none';
+				categoryField.style.display = 'block';
+				} else {
+				brandField.style.display = 'none';
+				categoryField.style.display = 'none';
+				}
+				};
+
+				// Listen for change events on the radio buttons
+				displayTypeRadios.forEach(radio => {
+				radio.addEventListener('change', toggleFields);
+				});
+
+				// Initialize the form visibility based on the current selection
+				toggleFields();
+			});
+		</script>
+	{% endblock %}
+
+{% endblock %}

@@ -1,0 +1,15 @@
+{
+    "name": "developpement/checkoutinformation",
+    "autoload": {
+        "psr-4": {
+            "Developpement\\Checkoutinformation\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "oubihis",
+            "email": "oubihis@gmail.com"
+        }
+    ],
+    "require": {}
+}

@@ -1,0 +1,31 @@
+{% extends '@PrestaShop/Admin/layout.html.twig' %}
+
+
+{% block content %}
+	<div class="card">
+		<div class="card-header">
+			<h3>Create/Edit Blogs</h3>
+		</div>
+		<div class="card-body">
+			{{ form_start(form) }}
+			{# {{ form_row(form.categoryId) }}
+
+			{% if form.products is defined %}
+				{{ form_row(form.products) }}
+			{% endif %} #}
+
+			{{ form_rest(form) }}
+
+
+		</div>
+		<div class="card-footer">
+
+			<div class="d-flex justify-content-between">
+				<a class="btn btn-secondary" href="{{ path('mm_blogs_index' )}}">Cancel</a>
+				<button type="submit" class="btn btn-primary">Save Section</button>
+			</div>
+		</div>
+	</div>
+	{{ form_end(form) }}
+	<script></script>
+{% endblock %}

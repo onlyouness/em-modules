@@ -1,0 +1,26 @@
+services:
+  _defaults:
+    public: true
+  # FORM
+  groupbanner.repository.banner_repository:
+        class: Hp\Groupbanner\Repository\BannerRepository
+        factory: ['@doctrine.orm.default_entity_manager', getRepository]
+        arguments:
+            - Hp\Groupbanner\Entity\GroupBanner
+  groupbanner.type.groupbanner:
+    class: 'Hp\Groupbanner\Form\BannerType'
+    parent: 'form.type.translatable.aware'
+    public: true
+    tags:
+      - { name: form.type}
+  groupbanner.form.identifiable_object.builder:
+    class: 'PrestaShop\PrestaShop\Core\Form\IdentifiableObject\Builder\FormBuilder'
+    factory: 'prestashop.core.form.builder.form_builder_factory:create'
+    public: true
+    arguments:
+        - 'Hp\Groupbanner\Form\BannerType'
+        - '@groupbanner.form.identifiable_object.data_provider'
+  groupbanner.form.identifiable_object.data_provider:
+    class: Hp\Groupbanner\Form\Provider\BannerDataProvider
+    arguments:
+        - '@groupbanner.repository.banner_repository'

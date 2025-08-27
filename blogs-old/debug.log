@@ -1,0 +1,453 @@
+[2024-12-26 10:03:01] $_POST: Array
+(
+    [id_profile] => 0
+    [first_name] => gfs
+    [last_name] => gsd
+    [address_alias] => 000
+    [id_country] => 8
+    [id_state] => 0
+    [city] => paris
+    [address] => paris
+    [vat_number] => 
+    [company_name] => 25332
+    [identification_number] => 34534
+    [customer_group] => 4
+    [email] => yelbaz432@gmail.com
+    [password] => younesselbaz123
+    [confirm_password] => younesselbaz123
+    [terms] => 1
+    [b2b_add_data] => 
+)
+
+[2024-12-26 10:03:01] $_FILES: Array
+(
+    [b2b_file_1] => Array
+        (
+            [name] => emuble.txt
+            [type] => text/plain
+            [tmp_name] => /tmp/phpSFTdCZ
+            [error] => 0
+            [size] => 246
+        )
+
+    [b2b_file_2] => Array
+        (
+            [name] => emeuble sitio web (2).rtf
+            [type] => application/msword
+            [tmp_name] => /tmp/phpx7SEY9
+            [error] => 0
+            [size] => 4294
+        )
+
+    [b2b_file_3] => Array
+        (
+            [name] => emeuble sitio web (1).rtf
+            [type] => application/msword
+            [tmp_name] => /tmp/phpQlsYlk
+            [error] => 0
+            [size] => 4294
+        )
+
+)
+
+[2024-12-26 10:03:01] hookActionCustomerAccountAdd triggered.
+[2024-12-26 10:03:01] Customer created with ID: 15
+[2024-12-26 10:03:01] File 1 uploaded successfully: /home/developpement/public_html/clients/countrytech/upload/emuble.txt
+[2024-12-26 10:03:01] File 2 uploaded successfully: /home/developpement/public_html/clients/countrytech/upload/emeuble sitio web (2).rtf
+[2024-12-26 10:03:01] File 3 uploaded successfully: /home/developpement/public_html/clients/countrytech/upload/emeuble sitio web (1).rtf
+[2024-12-26 10:51:14] $_POST: Array
+(
+    [id_profile] => 0
+    [first_name] => ds
+    [last_name] => gfds
+    [address_alias] => 000
+    [id_country] => 8
+    [id_state] => 0
+    [city] => Paris
+    [address] => paris
+    [vat_number] => 
+    [company_name] => dsgs
+    [identification_number] => 432423
+    [customer_group] => 4
+    [email] => yelbaz432@gmail.com
+    [password] => younesselbaz123
+    [confirm_password] => younesselbaz123
+    [terms] => 1
+    [b2b_add_data] => 
+)
+
+[2024-12-26 10:51:14] $_FILES: Array
+(
+    [b2b_file_1] => Array
+        (
+            [name] => emuble.txt
+            [type] => text/plain
+            [tmp_name] => /tmp/phptgLAgE
+            [error] => 0
+            [size] => 246
+        )
+
+    [b2b_file_2] => Array
+        (
+            [name] => O'CLOCK RETOURS POUR MISE EN LIGNE(1).pdf
+            [type] => 
+            [tmp_name] => 
+            [error] => 1
+            [size] => 0
+        )
+
+    [b2b_file_3] => Array
+        (
+            [name] => emeuble sitio web (1).rtf
+            [type] => application/msword
+            [tmp_name] => /tmp/php9G1fMF
+            [error] => 0
+            [size] => 4294
+        )
+
+)
+
+[2024-12-26 10:51:14] hookActionCustomerAccountAdd triggered.
+[2024-12-26 10:51:14] Customer created with ID: 18
+[2024-12-26 10:51:14] File 1 uploaded successfully: /home/developpement/public_html/clients/countrytech/upload/emuble.txt
+[2024-12-26 10:51:14] File input custom_file_2 is missing or empty.
+[2024-12-26 10:51:14] File 3 uploaded successfully: /home/developpement/public_html/clients/countrytech/upload/emeuble sitio web (1).rtf
+[2024-12-26 10:55:14] $_POST: Array
+(
+    [id_profile] => 0
+    [first_name] => hs
+    [last_name] => gsd
+    [address_alias] => 000
+    [id_country] => 8
+    [id_state] => 0
+    [city] => paris
+    [address] => paris
+    [vat_number] => 
+    [company_name] => gds
+    [identification_number] => 432
+    [customer_group] => 4
+    [email] => yelbaz432@gmail.com
+    [password] => younesselbaz123
+    [confirm_password] => younesselbaz123
+    [terms] => 1
+    [b2b_add_data] => 
+)
+
+[2024-12-26 10:55:14] $_FILES: Array
+(
+    [b2b_file_1] => Array
+        (
+            [name] => rib.pdf
+            [type] => application/pdf
+            [tmp_name] => /tmp/phpiOs9CY
+            [error] => 0
+            [size] => 26828
+        )
+
+    [b2b_file_2] => Array
+        (
+            [name] => Retours site BELMAR 16.10.pdf
+            [type] => application/pdf
+            [tmp_name] => /tmp/phpzB4vvk
+            [error] => 0
+            [size] => 448269
+        )
+
+    [b2b_file_3] => Array
+        (
+            [name] => #FA000016.pdf
+            [type] => application/pdf
+            [tmp_name] => /tmp/phpkoqaoG
+            [error] => 0
+            [size] => 127082
+        )
+
+)
+
+[2024-12-26 10:55:14] hookActionCustomerAccountAdd triggered.
+[2024-12-26 10:55:14] Customer created with ID: 19
+[2024-12-26 10:55:14] File 1 uploaded successfully: /home/developpement/public_html/clients/countrytech/upload/rib.pdf
+[2024-12-26 10:55:14] File 2 uploaded successfully: /home/developpement/public_html/clients/countrytech/upload/Retours site BELMAR 16.10.pdf
+[2024-12-26 10:55:14] File 3 uploaded successfully: /home/developpement/public_html/clients/countrytech/upload/#FA000016.pdf
+[2024-12-26 11:45:55] $_POST: Array
+(
+    [id_profile] => 0
+    [first_name] => ye
+    [last_name] => el
+    [address_alias] => 000
+    [id_country] => 8
+    [id_state] => 0
+    [city] => paris
+    [address] => Paris
+    [vat_number] => 
+    [company_name] => ewr
+    [identification_number] => 432
+    [customer_group] => 4
+    [email] => yelbaz432@gmail.com
+    [password] => younesselbaz123
+    [confirm_password] => younesselbaz123
+    [terms] => 1
+    [b2b_add_data] => 
+)
+
+[2024-12-26 11:45:55] $_FILES: Array
+(
+    [b2b_file_1] => Array
+        (
+            [name] => rib.pdf
+            [type] => application/pdf
+            [tmp_name] => /tmp/phpYkZk9H
+            [error] => 0
+            [size] => 26828
+        )
+
+    [b2b_file_2] => Array
+        (
+            [name] => Retours site BELMAR 16.10.pdf
+            [type] => application/pdf
+            [tmp_name] => /tmp/phpUBJunF
+            [error] => 0
+            [size] => 448269
+        )
+
+    [b2b_file_3] => Array
+        (
+            [name] => RIB_YounessElbaz.pdf
+            [type] => application/pdf
+            [tmp_name] => /tmp/php2WltEC
+            [error] => 0
+            [size] => 26580
+        )
+
+)
+
+[2024-12-26 11:45:55] hookActionCustomerAccountAdd triggered.
+[2024-12-26 11:45:55] Customer created with ID: 20
+[2024-12-26 11:45:55] File 1 uploaded successfully: /home/developpement/public_html/clients/countrytech/upload/file_676d33e37b93a2.97635339-20.pdf
+[2024-12-26 11:45:55] File 2 uploaded successfully: /home/developpement/public_html/clients/countrytech/upload/file_676d33e37d9046.11096737-20.pdf
+[2024-12-26 11:45:55] File 3 uploaded successfully: /home/developpement/public_html/clients/countrytech/upload/file_676d33e37e7725.93411201-20.pdf
+[2024-12-26 11:50:11] $_POST: Array
+(
+    [id_profile] => 0
+    [first_name] => few
+    [last_name] => few
+    [address_alias] => 000
+    [id_country] => 8
+    [id_state] => 0
+    [city] => Paris
+    [address] => paris
+    [vat_number] => 
+    [company_name] => wef
+    [identification_number] => 2342
+    [customer_group] => 4
+    [email] => yelbaz432@gmail.com
+    [password] => younesselbaz123
+    [confirm_password] => younesselbaz123
+    [terms] => 1
+    [b2b_add_data] => 
+)
+
+[2024-12-26 11:50:11] $_FILES: Array
+(
+    [b2b_file_1] => Array
+        (
+            [name] => Retours site BELMAR 16.10.pdf
+            [type] => application/pdf
+            [tmp_name] => /tmp/phpctmQJ7
+            [error] => 0
+            [size] => 448269
+        )
+
+    [b2b_file_2] => Array
+        (
+            [name] => #FA000016.pdf
+            [type] => application/pdf
+            [tmp_name] => /tmp/phpxu9bEG
+            [error] => 0
+            [size] => 127082
+        )
+
+    [b2b_file_3] => Array
+        (
+            [name] => Articulo 10. Como soldar el hierro fundido.pdf
+            [type] => application/pdf
+            [tmp_name] => /tmp/phpmdlEyf
+            [error] => 0
+            [size] => 26987
+        )
+
+)
+
+[2024-12-26 11:50:11] hookActionCustomerAccountAdd triggered.
+[2024-12-26 11:50:11] Customer created with ID: 21
+[2024-12-26 11:53:57] $_POST: Array
+(
+    [id_profile] => 0
+    [first_name] => few
+    [last_name] => few
+    [address_alias] => 000
+    [id_country] => 8
+    [id_state] => 0
+    [city] => Paris
+    [address] => paris
+    [vat_number] => 
+    [company_name] => wef
+    [identification_number] => 2342
+    [customer_group] => 4
+    [email] => yelbaz432@gmail.com
+    [password] => younesselbaz123
+    [confirm_password] => younesselbaz123
+    [terms] => 1
+    [b2b_add_data] => 
+)
+
+[2024-12-26 11:53:57] $_FILES: Array
+(
+    [b2b_file_1] => Array
+        (
+            [name] => rib.pdf
+            [type] => application/pdf
+            [tmp_name] => /tmp/phpwsNFMl
+            [error] => 0
+            [size] => 26828
+        )
+
+    [b2b_file_2] => Array
+        (
+            [name] => RIB_YounessElbaz.pdf
+            [type] => application/pdf
+            [tmp_name] => /tmp/phpXbmwV1
+            [error] => 0
+            [size] => 26580
+        )
+
+    [b2b_file_3] => Array
+        (
+            [name] => Retours site BELMAR 16.10.pdf
+            [type] => application/pdf
+            [tmp_name] => /tmp/phpm4Ho4H
+            [error] => 0
+            [size] => 448269
+        )
+
+)
+
+[2024-12-26 11:53:57] hookActionCustomerAccountAdd triggered.
+[2024-12-26 11:53:57] Customer created with ID: 22
+[2024-12-26 11:53:57] File 1 uploaded successfully: /home/developpement/public_html/clients/countrytech/upload/file_676d35c5b7ce52.96210656-22.pdf
+[2024-12-26 11:53:57] File 2 uploaded successfully: /home/developpement/public_html/clients/countrytech/upload/file_676d35c5b91b87.86530939-22.pdf
+[2024-12-26 11:53:57] File 3 uploaded successfully: /home/developpement/public_html/clients/countrytech/upload/file_676d35c5b9ef04.69292307-22.pdf
+[2024-12-26 12:30:16] $_POST: Array
+(
+    [id_profile] => 0
+    [first_name] => elbaz
+    [last_name] => el
+    [address_alias] => 000
+    [id_country] => 8
+    [id_state] => 0
+    [city] => paris
+    [address] => paris
+    [vat_number] => 
+    [company_name] => fds
+    [identification_number] => 231
+    [customer_group] => 4
+    [email] => yelbaz432@gmail.com
+    [password] => younesselbaz123
+    [confirm_password] => younesselbaz123
+    [terms] => 1
+    [b2b_add_data] => 
+)
+
+[2024-12-26 12:30:16] $_FILES: Array
+(
+    [b2b_file_1] => Array
+        (
+            [name] => Retours site BELMAR 16.10.pdf
+            [type] => application/pdf
+            [tmp_name] => /tmp/phppyWKpj
+            [error] => 0
+            [size] => 448269
+        )
+
+    [b2b_file_2] => Array
+        (
+            [name] => #FA000016.pdf
+            [type] => application/pdf
+            [tmp_name] => /tmp/php71hxPb
+            [error] => 0
+            [size] => 127082
+        )
+
+    [b2b_file_3] => Array
+        (
+            [name] => Articulo 11. Como escoger una soldadora.pdf
+            [type] => application/pdf
+            [tmp_name] => /tmp/phpd8ltf4
+            [error] => 0
+            [size] => 40442
+        )
+
+)
+
+[2024-12-26 12:30:16] hookActionCustomerAccountAdd triggered.
+[2024-12-26 12:30:16] Customer created with ID: 23
+[2024-12-26 12:30:16] File 1 uploaded successfully: /home/developpement/public_html/clients/countrytech/upload/file_676d3e481e0bd7.93171478-23.pdf
+[2024-12-26 12:30:16] File 2 uploaded successfully: /home/developpement/public_html/clients/countrytech/upload/file_676d3e481faa13.75950200-23.pdf
+[2024-12-26 12:30:16] File 3 uploaded successfully: /home/developpement/public_html/clients/countrytech/upload/file_676d3e48265ec8.80882116-23.pdf
+[2024-12-26 12:35:29] $_POST: Array
+(
+    [id_profile] => 0
+    [first_name] => youness
+    [last_name] => elbaz
+    [address_alias] => 000
+    [id_country] => 8
+    [id_state] => 0
+    [city] => Paris
+    [address] => Paris
+    [vat_number] => 
+    [company_name] => FLE
+    [identification_number] => 12341234
+    [customer_group] => 4
+    [email] => yelbaz432@gmail.com
+    [password] => younesselbaz123
+    [confirm_password] => younesselbaz123
+    [terms] => 1
+    [b2b_add_data] => 
+)
+
+[2024-12-26 12:35:29] $_FILES: Array
+(
+    [b2b_file_1] => Array
+        (
+            [name] => Retours site BELMAR 16.10.pdf
+            [type] => application/pdf
+            [tmp_name] => /tmp/phpC1Ka9T
+            [error] => 0
+            [size] => 448269
+        )
+
+    [b2b_file_2] => Array
+        (
+            [name] => RIB_YounessElbaz.pdf
+            [type] => application/pdf
+            [tmp_name] => /tmp/phpvC8Hjd
+            [error] => 0
+            [size] => 26580
+        )
+
+    [b2b_file_3] => Array
+        (
+            [name] => #FA000016.pdf
+            [type] => application/pdf
+            [tmp_name] => /tmp/phpm48guw
+            [error] => 0
+            [size] => 127082
+        )
+
+)
+
+[2024-12-26 12:35:29] hookActionCustomerAccountAdd triggered.
+[2024-12-26 12:35:29] Customer created with ID: 24
+[2024-12-26 12:35:29] File 1 uploaded successfully: /home/developpement/public_html/clients/countrytech/upload/file_676d3f818cff42.83755818-24.pdf
+[2024-12-26 12:35:29] File 2 uploaded successfully: /home/developpement/public_html/clients/countrytech/upload/file_676d3f81915856.43238913-24.pdf
+[2024-12-26 12:35:29] File 3 uploaded successfully: /home/developpement/public_html/clients/countrytech/upload/file_676d3f8193d466.01478687-24.pdf

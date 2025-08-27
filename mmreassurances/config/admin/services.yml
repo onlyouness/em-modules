@@ -1,0 +1,26 @@
+services:
+  _defaults:
+    public: true
+  # FORM
+  reassurance.repository.banner_repository:
+        class: Hp\Mmreassurances\Repository\ReassuranceRepository
+        factory: ['@doctrine.orm.default_entity_manager', getRepository]
+        arguments:
+            - Hp\Mmreassurances\Entity\Reassurance
+  reassurance.type.reassurance:
+    class: 'Hp\Mmreassurances\Form\ReassuranceType'
+    parent: 'form.type.translatable.aware'
+    public: true
+    tags:
+      - { name: form.type}
+  reassurance.form.identifiable_object.builder:
+    class: 'PrestaShop\PrestaShop\Core\Form\IdentifiableObject\Builder\FormBuilder'
+    factory: 'prestashop.core.form.builder.form_builder_factory:create'
+    public: true
+    arguments:
+        - 'Hp\Mmreassurances\Form\ReassuranceType'
+        - '@reassurance.form.identifiable_object.data_provider'
+  reassurance.form.identifiable_object.data_provider:
+    class: Hp\Mmreassurances\Form\Provider\ReassuranceDataProvider
+    arguments:
+        - '@reassurance.repository.banner_repository'

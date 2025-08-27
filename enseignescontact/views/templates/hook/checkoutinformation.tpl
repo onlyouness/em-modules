@@ -1,0 +1,1 @@
+<p class="alert alert-info">{$checkout_information}</p>

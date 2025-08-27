@@ -1,0 +1,10 @@
+services:
+  _defaults:
+    public: true
+
+  services.type.service:
+    class: 'Hp\Services\Form\ServiceType'
+    parent: 'form.type.translatable.aware'
+    public: true
+    tags:
+      - { name: form.type}

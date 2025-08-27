@@ -1,0 +1,77 @@
+{% extends '@PrestaShop/Admin/layout.html.twig' %}
+
+{% block content %}
+	<style>
+		td img {
+			max-width: 100px;
+			max-height: 100px;
+			object-fit: cover;
+		}
+		.actions_container {
+			border-bottom: none !important;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: none;
+			height: 100%;
+		}
+		button {
+			border: none;
+			background: transparent;
+			color: black;
+			padding: 0 0 10px;
+			font-size: 14px;
+		}
+		td a {
+			color: black;
+			padding: 0 0 10px;
+			font-size: 14px;
+		}
+	</style>
+
+
+	<div class="card">
+		<div class="card-header">
+			<div class="d-flex justify-content-between align-items-center">
+				<h1 class="no-padding">{{ 'List Fiches'|trans({},'') }}</h1>
+			</div>
+		</div>
+		<div class="card-body">
+			{% if files is defined and files is not empty %}
+				<div class="row">
+					<div class="col">
+						<table class="table table-bordered">
+							<thead>
+								<tr>
+									<th scope="row">Email</th>
+									<th>Produit</th>
+									<th>Fiche Telecharger</th>
+									<th>Date de Creations</th>
+								</tr>
+							</thead>
+							<tbody>
+								{% for demande in demandes %}
+									<tr>
+										<td>{{ demande.email }}</td>
+										<td>{{ demande.produit }}</td>
+                                            <td>
+											<a href="{{ file.fiche }}">Telecharger</a>
+										</td>
+                                        <td>{{ demande.created_at }}</td>
+									</tr>
+								{% endfor %}
+							</tbody>
+						</table>
+					</div>
+				</div>
+			{% else %}
+				<div class="mx-2">
+					<div class="px-2">
+						<p>No Demande Yet!</p>
+					</div>
+				</div>
+			{% endif %}
+
+		</div>
+	</div>
+{% endblock %}

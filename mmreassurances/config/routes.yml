@@ -1,0 +1,3 @@
+articles:
+  resource: 'routes/reassurance.yml'
+  prefix : '/reassurances'

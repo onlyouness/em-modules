@@ -1,0 +1,47 @@
+{% extends '@PrestaShop/Admin/layout.html.twig' %}
+
+{% block content %}
+	<div class="card">
+		<div class="card-header">
+			<h3>Create/Edit</h3>
+		</div>
+		{{ form_start(form) }}
+		<div class="card-body">
+
+
+			{{ form_row(form.subtitle) }}
+			{{ form_row(form.title) }}
+			{{ form_row(form.description) }}
+			{{ form_row(form.link) }}
+
+			{{ form_row(form.bgimage) }}
+			{% if bgimage is defined and bgimage is not empty %}
+				<div class="d-flex justify-content-end">
+					<img style="width: 200px;height: 200px;margin-bottom: 20px" src="{{ base_dir ~ '/modules/enseignescontact/img/' ~ bgimage }}"/>
+				</div>
+			{% endif %}
+
+			{{ form_row(form.mapimage) }}
+			{% if mapimage is defined and mapimage is not empty %}
+				<div class="d-flex justify-content-end">
+					<img style="width: 200px;height: 200px;margin-bottom: 20px" src="{{ base_dir ~ '/modules/enseignescontact/img/' ~ mapimage }}"/>
+				</div>
+			{% endif %}
+
+
+			{{ form_rest(form) }}
+		</div>
+		<div class="card-footer">
+			<div class="d-flex justify-content-between align-items-center">
+				<a class="btn btn-secondary" href="{{ path('mm_ensigne_contact_index' )}}">Cancel</a>
+				<button type="submit" class="btn btn-primary">Save</button>
+			</div>
+		</div>
+		{{ form_end(form, {'render_rest': false}) }}
+	</div>
+
+	{% block javascripts %}
+		{{ parent() }}
+	{% endblock %}
+
+{% endblock %}

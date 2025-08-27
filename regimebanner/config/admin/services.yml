@@ -1,0 +1,26 @@
+services:
+  _defaults:
+    public: true
+  # FORM
+  regimebanner.repository.banner_repository:
+        class: Hp\Regimebanner\Repository\BannerRepository
+        factory: ['@doctrine.orm.default_entity_manager', getRepository]
+        arguments:
+            - Hp\Regimebanner\Entity\RegimeBanner
+  regimebanner.type.regimebanner:
+    class: 'Hp\Regimebanner\Form\BannerType'
+    parent: 'form.type.translatable.aware'
+    public: true
+    tags:
+      - { name: form.type}
+  regimebanner.form.identifiable_object.builder:
+    class: 'PrestaShop\PrestaShop\Core\Form\IdentifiableObject\Builder\FormBuilder'
+    factory: 'prestashop.core.form.builder.form_builder_factory:create'
+    public: true
+    arguments:
+        - 'Hp\Regimebanner\Form\BannerType'
+        - '@regimebanner.form.identifiable_object.data_provider'
+  regimebanner.form.identifiable_object.data_provider:
+    class: Hp\Regimebanner\Form\Provider\BannerDataProvider
+    arguments:
+        - '@regimebanner.repository.banner_repository'

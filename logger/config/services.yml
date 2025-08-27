@@ -1,0 +1,6 @@
+services:
+  hp.logger.service:
+    class: Hp\Logger\Services\LoggerService
+    public: true
+    autowire: true
+    autoconfigure: true

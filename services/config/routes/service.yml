@@ -1,0 +1,52 @@
+oil_service_index:
+  path: /
+  methods : GET
+  defaults:
+    _controller: Hp\Services\Controller\ServiceController::indexAction
+    _disable_module_prefix: true
+    _legacy_controller : ServiceController
+    _legacy_link: ServiceController
+
+oil_service_create:
+  path: /create
+  methods : [GET,POST]
+  defaults:
+    _controller: Hp\Services\Controller\ServiceController::createAction
+    _disable_module_prefix: true
+    _legacy_controller : ServiceController
+    _legacy_link: ServiceController
+
+oil_service_edit:
+  path: /edit/{id}
+  methods : [GET,POST]
+  defaults:
+    _controller: Hp\Services\Controller\ServiceController::editAction
+    _disable_module_prefix: true
+    _legacy_controller : ServiceController
+    _legacy_link: ServiceController
+oil_service_delete:
+  path: /delete/{id}
+  methods : [GET,POST]
+  defaults:
+    _controller: Hp\Services\Controller\ServiceController::deleteAction
+    _disable_module_prefix: true
+    _legacy_controller : ServiceController
+    _legacy_link: ServiceController
+
+oil_service_active:
+  path: /sections/active/{id}
+  methods: [GET,POST]
+  defaults:
+    _controller: Hp\Services\Controller\ServiceController::activeAction
+    _disable_module_prefix: true
+    _legacy_controller: ServiceController
+    _legacy_link: ServiceController
+
+oil_section_edit:
+  path: /section/{id}
+  methods: [GET,POST]
+  defaults:
+    _controller: Hp\Services\Controller\ServiceController::editSectionAction
+    _disable_module_prefix: true
+    _legacy_controller: ServiceController
+    _legacy_link: ServiceController

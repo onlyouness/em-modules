@@ -1,0 +1,59 @@
+.banner_discount_container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: auto;
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    pointer-events: none;
+}
+.banner_discount_container .bg-discount {
+    width: 80%;
+    margin-left: auto;
+}
+.banner_discount_details .shortDescription {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    color: #FF8301;
+    mix-blend-mode: normal;
+    margin: 0;
+}
+.banner_discount_details .title {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    color: #030C1A;
+    mix-blend-mode: normal;
+    margin: 0;
+}
+.banner_discount_details .description {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    color: #000000;
+    mix-blend-mode: normal;
+    margin: 0;
+}
+.banner_discount_container button {
+    padding: 16px 44px;
+    background: #FE8000;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    margin: 0;
+    cursor: pointer;
+}
+.banner_discount_details{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}

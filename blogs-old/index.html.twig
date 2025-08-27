@@ -1,0 +1,87 @@
+{% extends '@PrestaShop/Admin/layout.html.twig' %}
+
+{% block content %}
+	<style>
+		td img {
+			max-width: 100px;
+			max-height: 100px;
+			object-fit: cover;
+		}
+		.actions_container {
+			border-bottom: none !important;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: none;
+			height: 100%;
+		}
+		button {
+			border: none;
+			background: transparent;
+			color: black;
+			padding: 0 0 10px;
+			font-size: 14px;
+		}
+		td a {
+			color: black;
+			padding: 0 0 10px;
+			font-size: 14px;
+		}
+	</style>
+
+	
+		
+
+
+	<div class="card">
+		<div class="card-header">
+			<div class="d-flex justify-content-between align-items-center">
+				<h1 class="no-padding">{{ 'List Of Files'|trans({},'b2buploadfiles') }}</h1>
+			</div>
+		</div>
+		<div class="card-body">
+			{% if files is defined and files is not empty %}
+				<div class="row">
+					<div class="col">
+						<table class="table table-bordered">
+							<thead>
+								<tr>
+									<th scope="row">ID</th>
+									<th>Customer</th>
+									<th>File Label</th>
+									<th>File Telecharger</th>
+									<th>Actions</th>
+								</tr>
+							</thead>
+							<tbody>
+								{% for file in files %}
+									<tr>
+										<td>{{ file.file_id }}</td>
+										<td>{{ file.firstname ~ file.lastname }}</td>
+										<td>{{ file.label }}</td>
+										<td><a href="{{ file.file_path }}">Telecharger</a></td>
+										
+									
+                                        <td>
+                                            <a href="{{ path('tech_files_customer',{customerId:file.customer_id}) }}">Voir</a>
+                                        </td>
+                                        
+
+									</tr>
+
+								{% endfor %}
+							</tbody>
+						</table>
+					</div>
+				</div>
+			{% else %}
+				<div class="mx-2">
+					<div class="px-2">
+						<p>No Files Yet!</p>
+					</div>
+				</div>
+			{% endif %}
+
+	    </div>
+	    </div>
+{% endblock %}

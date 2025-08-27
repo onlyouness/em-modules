@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>mmreassurances</name>
+    <displayName><![CDATA[MM Reassurances]]></displayName>
+    <version><![CDATA[1.0.0]]></version>
+    <description><![CDATA[Allows user to add a dynamic Reassurances.]]></description>
+    <author><![CDATA[Youness Elbaz MM]]></author>
+    <tab><![CDATA[administration]]></tab>
+    <is_configurable>0</is_configurable>
+    <need_instance>0</need_instance>
+</module>

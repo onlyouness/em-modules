@@ -1,0 +1,288 @@
+.ets-product-specific .product-description .comments_note {
+  margin-bottom: 5px;
+}
+#ets_hotdeals .thumbnail.product-thumbnail > img {
+    margin: 0 auto;
+    position: relative;
+}
+
+.product-infomation-content{
+    display: block;
+    width: 100%;
+    position: relative;
+}
+.ets-product-specific .product-price-and-shipping {
+  margin-bottom: 10px;
+}
+.ets-product-specific .product-miniature {
+  float: left;
+  margin-bottom: 0;
+  padding: 0 0.625rem;
+}
+.ybc_countdown .ets-product-specific {
+  margin: 0 -0.625rem;
+  position: static;
+  width: auto;
+}
+.ets-product-specific .product-description .short_description, .ets-product-specific .product-description .short_description p {
+    font-size: 14px;
+    color: #999;
+}
+.ets-product-specific .slick-track {
+    float: left;
+}
+#ets_hotdeals .product-thumbnail img {
+  margin: 0 auto;
+  max-width: 100%;
+}
+.ets_ws_product_price.product-miniature .product-description {
+    margin-left: 0;
+}
+#ybc_specificprices {
+  border: 1px solid #e7e7e7;
+  height: 100%;
+}
+#ybc_specificprices .products-section-title {
+  position: absolute;
+  top: 0;
+}
+
+.ets-product-specific .product-description {
+  height: auto;
+  padding-bottom: 15px;
+  position: relative;
+  text-align: center;
+  width: auto;
+  max-width: 100%;
+  padding: 1px 15px 15px;
+}
+#ets_hotdeals .products-section-title {
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+}
+#ets_hotdeals {
+  float: left;
+  margin-bottom: 50px;
+  padding-top: 0;
+  position: relative;
+  width: 100%;
+}
+.ybc_countdown {
+  float: left;
+  margin-top: 20px;
+  width: 100%;
+}
+.hook-reviews .nb-comments {
+  display: none;
+}
+.ybc_countdown #ets_hotdeals .comments_note {
+  text-align: center!important;
+}
+.ybc_countdown #ets_hotdeals .comments_note .star_content {
+  display: inline-block;
+  float: none!important;
+  margin: 0 auto;
+}
+#ybc_specificprices .owl-nav {
+  right: 15px;
+}
+.ybc_cd_item {
+    float: left;
+    padding: 0 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    width: 25%;
+}
+.ybc_cd_item .number{
+    font-size: 12px;
+    font-weight: normal;
+    color: #929292;
+    float: left;
+    width: 100%;
+    line-height: 1;
+    margin-top: 1px;
+    text-align: center;
+}
+.ets_clock {
+    background-color: #f7f7f7;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    padding: 6px 0;
+    position: relative;
+    text-align: center;
+    margin: 5px 0;
+    display: none;
+    font-size: 14px;
+}
+.ets_clock.active{
+    display: flexbox;
+  display: -o-flexbox;
+  display: -ms-flexbox;
+  display: -moz-flexbox;
+  display: -webkit-flexbox;
+  display: flex;
+  display: -o-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: -webkit-flex;
+}
+.product-title-attribute {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  text-transform: none;
+  font-style: italic;
+}
+.ets-product-specific .product-description .table-cell {
+  padding-right: 30px;
+}
+.ybc_cd_item:not(:last-child) {
+  border-right: 1px solid #e7e7e7;
+}
+.ets-product-specific .thumbnail-container {
+  height: auto;
+  width: auto;
+}
+.ybc_countdown .product-miniature.slick-slide {
+  width: 100%;
+}
+.ets-product-specific button.slick-arrow.slick-next {
+  cursor: pointer;
+  float: right;
+  margin-left: 5px;
+}
+.product_special_img .discount-percentage {
+  background: #f39d72 none repeat scroll 0 0;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  color: #fff;
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  left: -0.4375rem;
+  min-height: 1.875rem;
+  min-width: 3.125rem;
+  padding: 0.3125rem 0.4375rem;
+  position: absolute;
+  text-transform: uppercase;
+  top: 10px!important;
+}
+.ets-product-specific button.slick-arrow.slick-next::before {
+  border-right: 1px solid #999;
+  border-top: 1px solid #999;
+  content: "";
+  cursor: pointer;
+  display: block;
+  float: right;
+  height: 8px;
+  position: absolute;
+  right: 9px;
+  top: 8px;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  width: 8px;
+}
+.ets-product-specific .product-description .comments_note > span {
+  display: none;
+}
+.ybc_countdown .star_content .star {
+  display: inline-block;
+  float: none;
+  margin: 0;
+}
+.ets-product-specific button.slick-arrow.slick-prev {
+    margin-right: 30px;
+}
+.ets-product-specific button.slick-arrow.slick-prev::before {
+  border-left: 1px solid #999;
+  border-top: 1px solid #999;
+  content: "";
+  cursor: pointer;
+  display: block;
+  height: 8px;
+  left: 9px;
+  position: absolute;
+  top: 8px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  width: 8px;
+}
+.ets-product-specific button.slick-arrow {
+    font-size: 0;
+    border: 1px solid #e7e7e7;
+    width: 26px;
+    background: #ffffff;
+    height: 26px;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    outline: none!important;
+    box-shadow: none!important;
+    cursor: pointer;
+    transform: none!important;
+    -webkit-transform: none!important;
+}
+.ets-product-specific button.slick-arrow:hover {
+    border-color: #999;
+}
+.ets-product-specific button.slick-arrow.slick-prev:hover:before {
+    border-left-color: #333;
+    border-top-color: #333;
+}
+.ets-product-specific button.slick-arrow.slick-next:hover:before {
+    border-right-color: #333;
+    border-top-color: #333;
+}
+@media (max-width: 991px){
+    .ybc_countdown {
+        margin-bottom: 30px;
+        width: 100%;
+        float: left;
+    }
+    .bg-home .homeblog_wrapper {
+      float: left;
+      width: 100%;
+    }
+    #ybc_specificprices {
+      border: 1px solid #e7e7e7;
+      float: left;
+      height: 100%;
+      width: 100%;
+    }
+}
+@media (max-width: 767px){
+    .ets-product-specific .product-description .table-cell {
+      padding-right: 15px;
+    }
+    #ets_hotdeals {
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 479px){
+    .thumbnail-container .product_special_img {
+      width: 100%;
+    }
+    .ets-product-specific .product-description {
+      width: 100%;
+    }
+    .ets-product-specific .product-miniature .thumbnail-container {
+      display: block;
+    }
+    .ets-product-specific .product-description .table-cell {
+      padding: 0 15px;
+      text-align: center;
+    }
+    .ets-product-specific .product-miniature .product-title, .ets-product-specific .product-price-and-shipping, .ets-product-specific .star_content {
+      text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+

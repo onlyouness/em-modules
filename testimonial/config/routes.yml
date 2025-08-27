@@ -1,0 +1,4 @@
+mm_testimonial:
+  resource: 'routes/testimonial.yml'
+  prefix : '/testimonial'
+

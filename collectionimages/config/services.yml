@@ -1,0 +1,4 @@
+services:
+  Hp\Collectionimages\Controller\AdminCollectionImage:
+    class: Hp\Collectionimages\Controller\AdminCollectionImage
+    tags: ["controller.service_arguments"]

@@ -1,0 +1,3 @@
+collection:
+  resource: 'routes/collection.yml'
+  prefix : '/collection'

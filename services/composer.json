@@ -1,0 +1,15 @@
+{
+    "name": "hp/services",
+    "autoload": {
+        "psr-4": {
+            "Hp\\Services\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "onlyouness",
+            "email": "elyouness765@gmail.com"
+        }
+    ],
+    "require": {}
+}

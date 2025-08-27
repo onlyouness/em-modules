@@ -1,0 +1,137 @@
+/**
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file.
+ * You are not authorized to modify, copy or redistribute this file.
+ * Permissions are reserved by FME Modules.
+ *
+ *  @author    FME Modules
+ *  @copyright 2021 FME Modules
+ *  @license   Comerical Licence
+ *  @package   b2bregistration
+ */
+
+.image_container {
+    border: 1px solid #d4d4d4;
+    cursor: pointer;
+    max-width: 100%;
+}
+.image_input, .extension_error, .image_container + .uploader {
+    display: none;
+}
+.extension_error {
+    margin-top: 10px;
+}
+.type_multiboxes {
+    text-align: left;
+}
+
+/* radio and checkboxes  */
+
+#registration_fields input[type="checkbox"]:not(old),
+#registration_fields input[type="radio"]:not(old) {
+  width: 2em;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  opacity: 0;
+}
+
+#registration_fields input[type="checkbox"]:not(old) + label,
+#registration_fields input[type="radio"]:not(old) + label {
+  display: inline-block;
+  margin-left: 0em;
+  line-height: 1.5em;
+}
+
+#registration_fields input[type="checkbox"]:not(old) + label > span {
+  border-radius: 0.25em;
+}
+#registration_fields input[type="radio"]:not(old) + label > span {
+  border-radius: 1.25em;
+}
+#registration_fields input[type="checkbox"]:not(old) + label > span,
+#registration_fields input[type="radio"]:not(old) + label > span {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin: 0.25em 0.5em 0.25em 0.25em;
+  border: 0.0625em solid rgb(192, 192, 192);
+  /* border-radius: 0.25em; */
+  background: rgb(224, 224, 224);
+  background-image: -moz-linear-gradient(
+    rgb(240, 240, 240),
+    rgb(224, 224, 224)
+  );
+  background-image: -ms-linear-gradient(rgb(240, 240, 240), rgb(224, 224, 224));
+  background-image: -o-linear-gradient(rgb(240, 240, 240), rgb(224, 224, 224));
+  background-image: -webkit-linear-gradient(
+    rgb(240, 240, 240),
+    rgb(224, 224, 224)
+  );
+  background-image: linear-gradient(rgb(240, 240, 240), rgb(224, 224, 224));
+  vertical-align: bottom;
+}
+
+#registration_fields
+  input[type="checkbox"]:not(old):checked
+  + label
+  > span,
+#registration_fields input[type="radio"]:not(old):checked + label > span {
+  background-image: -moz-linear-gradient(
+    rgb(224, 224, 224),
+    rgb(240, 240, 240)
+  );
+  background-image: -ms-linear-gradient(rgb(224, 224, 224), rgb(240, 240, 240));
+  background-image: -o-linear-gradient(rgb(224, 224, 224), rgb(240, 240, 240));
+  background-image: -webkit-linear-gradient(
+    rgb(224, 224, 224),
+    rgb(240, 240, 240)
+  );
+  background-image: linear-gradient(rgb(224, 224, 224), rgb(240, 240, 240));
+}
+
+#registration_fields
+  input[type="checkbox"]:checked:not(old)
+  + label
+  > span::before {
+  content: "✔";
+  display: block;
+  width: 1em;
+  color: rgb(115, 153, 77);
+  font-size: 15px;
+  line-height: 10px;
+  text-align: center;
+}
+
+#registration_fields
+  input[type="radio"]:checked:not(old)
+  + label
+  > span
+  > span {
+  display: block;
+  width: 0.9em;
+  height: 0.9em;
+  border: 0.0625em solid rgb(115, 153, 77);
+  border-radius: 1.125em;
+  background: rgb(153, 204, 102);
+  background-image: -moz-linear-gradient(
+    rgb(179, 217, 140),
+    rgb(153, 204, 102)
+  );
+  background-image: -ms-linear-gradient(rgb(179, 217, 140), rgb(153, 204, 102));
+  background-image: -o-linear-gradient(rgb(179, 217, 140), rgb(153, 204, 102));
+  background-image: -webkit-linear-gradient(
+    rgb(179, 217, 140),
+    rgb(153, 204, 102)
+  );
+  background-image: linear-gradient(rgb(179, 217, 140), rgb(153, 204, 102));
+}
+#registration_fields .rf_no_display {
+  display: none;
+}
+
+.cf_disabled_btn  {
+  opacity: .65;
+  cursor: not-allowed;
+}

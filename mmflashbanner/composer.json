@@ -1,0 +1,15 @@
+{
+    "name": "hp/mmflashbanner",
+    "autoload": {
+        "psr-4": {
+            "Hp\\MmFlashBanner\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "onlyouness",
+            "email": "elyouness765@gmail.com"
+        }
+    ],
+    "require": {}
+}

@@ -1,0 +1,15 @@
+{
+    "name": "hp/regimebanner",
+    "autoload": {
+        "psr-4": {
+            "Hp\\Regimebanner\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "onlyouness",
+            "email": "elyouness765@gmail.com"
+        }
+    ],
+    "require": {}
+}

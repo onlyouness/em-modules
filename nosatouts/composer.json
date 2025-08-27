@@ -1,0 +1,15 @@
+{
+    "name": "hp/nosatouts",
+    "autoload": {
+        "psr-4": {
+            "Hp\\Nosatouts\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "onlyouness",
+            "email": "elyouness765@gmail.com"
+        }
+    ],
+    "require": {}
+}

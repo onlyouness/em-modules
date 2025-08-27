@@ -1,0 +1,3 @@
+ps_group_banner:
+  resource: 'routes/bannergroup.yml'
+  prefix : '/banner-group/'

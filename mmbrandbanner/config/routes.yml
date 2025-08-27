@@ -1,0 +1,4 @@
+mm_brand_banners:
+  resource: 'routes/brandbanners.yml'
+  prefix : '/brandbanners/'
+

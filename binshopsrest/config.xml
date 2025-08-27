@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>binshopsrest</name>
+    <displayName><![CDATA[PrestaShop REST API]]></displayName>
+    <version><![CDATA[2.5.0]]></version>
+    <description><![CDATA[This module exposes REST API endpoints for your Prestashop website.]]></description>
+    <author><![CDATA[Binshops]]></author>
+    <tab><![CDATA[others]]></tab>
+	<confirmUninstall><![CDATA[Are you sure you want to uninstall my module?]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+</module>

@@ -1,0 +1,40 @@
+services:
+  #GRID
+  opentasks.grid.definition.factory:
+    public: true
+    class: 'Hp\Opentasks\Grid\Definition\Factory\TaskDefinitionFactory'
+    parent: 'prestashop.core.grid.definition.factory.abstract_grid_definition'
+
+  opentasks.grid.query_builder:
+    public: true
+    class: 'Hp\Opentasks\Grid\Query\TaskQueryBuilder'
+    parent: 'prestashop.core.grid.abstract_query_builder'
+    arguments:
+      - '@prestashop.core.query.doctrine_search_criteria_applicator'
+      - "@=service('prestashop.adapter.legacy.context').getContext().language.id"
+      - '@prestashop.core.grid.query.filter.doctrine_filter_applicator'
+
+  opentasks.grid.data.factory:
+    public: true
+    class: '%prestashop.core.grid.data.factory.doctrine_grid_data_factory%'
+    arguments:
+      - '@opentasks.grid.query_builder'
+      - '@prestashop.core.hook.dispatcher'
+      - '@prestashop.core.grid.query.doctrine_query_parser'
+      - 'Articles'
+
+  opentasks.grid.data.factory.doctrine:
+    public: true
+    class: 'Hp\Opentasks\Grid\Data\Factory\TaskGridDataFactory'
+    arguments:
+      - '@opentasks.grid.data.factory'
+
+  opentasks.grid.grid_factory:
+    public: true
+    class: 'PrestaShop\PrestaShop\Core\Grid\GridFactory'
+    arguments:
+      - '@opentasks.grid.definition.factory'
+      - '@opentasks.grid.data.factory.doctrine'
+      - '@prestashop.core.grid.filter.form_factory'
+      - '@prestashop.core.hook.dispatcher'
+

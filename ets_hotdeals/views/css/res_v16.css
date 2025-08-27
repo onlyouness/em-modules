@@ -1,0 +1,115 @@
+.ets-product-specific .thumbnail.product-thumbnail {
+  margin: 0;
+}
+.ets-product-specific .thumbnail-container {
+  position: relative;
+}
+.product-title-attribute {
+  margin-top: 0;
+}
+.ets-product-specific .availability {
+  display: none;
+}
+.ets_clock {
+  margin: 10px 0 0;
+}
+.ets-product-specific .product-flags {
+  display: none;
+}
+.ets-product-specific .right-block {
+  text-align: center;
+}
+.ets-product-specific .left-block .content_price {
+  background: rgba(0, 0, 0, 0.8) repeat scroll 0 0;
+  bottom: -1px;
+  display: none;
+  left: 0;
+  padding: 9px 0;
+  position: absolute;
+  width: 100%;
+}
+.ets-product-specific .left-block .price {
+  color: #fff;
+}
+.ets_hotdeal_carousel_slider .product-image-container {
+  border: 1px solid #d6d4d4;
+}
+.ets-product-specific .product-container:hover .left-block .content_price{
+    display: block;
+}
+.ets-product-specific .product-image-container {
+  position: relative;
+}
+
+#ets_hotdeals .ybc_countdown .comments_note {
+  text-align: center!important;
+}
+#ets_hotdeals .ybc_countdown .comments_note .star_content {
+  display: inline-block;
+  float: none!important;
+  margin: 0 auto;
+}
+.ybc_countdown #ets_hotdeals .owl-item .product-miniature {
+  height: auto!important;
+  margin-bottom: 0!important;
+}
+.ybc_countdown #ets_hotdeals .comments_note {
+  text-align: center;
+}
+.ets-product-specific .product-miniature {
+  padding: 0 15px;
+}
+.ybc_countdown .ets-product-specific {
+  margin: 0 -15px;
+}
+.ybc_countdown .products-section-title {
+  border: medium none;
+  color: #555454;
+  font: 600 21px/24px "Open Sans",sans-serif;
+  margin: 0;
+  outline: medium none;
+  text-transform: uppercase;
+}
+.ets-product-specific .old-price.product-price {
+  margin-right: 5px;
+}
+#ets_hotdeals .products-section-title {
+  margin-bottom: 30px;
+}
+.ybc_countdown {
+  margin-top: 40px;
+}
+@media (min-width: 1200px){
+    .ets-product-specific .desktop_first_line {
+      clear: both;
+    }
+    .ets-product-specific .product-container:hover .content_price {
+      display: none;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    .ets-product-specific .tableth_first_line {
+      clear: both;
+    }
+    .ets-product-specific .product-container:hover .content_price {
+      display: none;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .ets-product-specific .tablet_first_line {
+      clear: both;
+    }
+}
+@media (min-width: 480px) and (max-width: 767px){
+    .ets-product-specific .ajax_block_product {
+      width: 50%;
+    }
+    #ets_hotdeals .product-miniature:nth-child(2n+1) {
+      clear: both;
+    }
+}
+@media (max-width: 479px){
+    .ets-product-specific .mobile_first_line {
+      clear: both;
+    }
+}

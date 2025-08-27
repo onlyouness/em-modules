@@ -1,0 +1,15 @@
+{
+    "name": "hp/filterdproducts",
+    "autoload": {
+        "psr-4": {
+            "Hp\\Filterdproducts\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "onlyouness",
+            "email": "elyouness765@gmail.com"
+        }
+    ],
+    "require": {}
+}

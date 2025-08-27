@@ -1,0 +1,14 @@
+{% extends '@PrestaShop/Admin/layout.html.twig' %}
+
+{% block content %}
+    {% block article_list_panel %}
+        <div class="row">
+            <div class="col">
+                <a >Add</a>
+                {% include '@PrestaShop/Admin/Common/Grid/grid_panel.html.twig' with {'grid': articleGrid } %}
+
+            </div>
+
+        </div>
+    {% endblock %}
+{% endblock %}

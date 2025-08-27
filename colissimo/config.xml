@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>colissimo</name>
+    <displayName><![CDATA[Colissimo - Official app : Manage your shipments with Colissimo.]]></displayName>
+    <version><![CDATA[2.1.9]]></version>
+    <description><![CDATA[Colissimo-Officiel module allows you to set up your Pick-up points delivery services on your website, print your labels from your back office or using Coliship, offer parcel tracking to your customers.]]></description>
+    <author><![CDATA[Colissimo]]></author>
+    <tab><![CDATA[shipping_logistics]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+</module>

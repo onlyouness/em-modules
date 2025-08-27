@@ -1,0 +1,27 @@
+mm_tasks_index:
+  path: /
+  methods : GET
+  defaults:
+    _controller: Hp\Opentasks\Controller\AdminOpenTask::indexAction
+    _disable_module_prefix: true
+    _legacy_controller : AdminOpenTask
+    _legacy_link: AdminOpenTask
+
+oil_opentasks_edit:
+  path: /
+  methods : GET
+  defaults:
+    _controller: Hp\Opentasks\Controller\AdminOpenTask::indexAction
+    _disable_module_prefix: true
+    _legacy_controller : AdminOpenTask
+    _legacy_link: AdminOpenTask
+
+
+oil_opentasks_delete:
+  path: /
+  methods : GET
+  defaults:
+    _controller: Hp\Opentasks\Controller\AdminOpenTask::indexAction
+    _disable_module_prefix: true
+    _legacy_controller : AdminOpenTask
+    _legacy_link: AdminOpenTask

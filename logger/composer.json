@@ -1,0 +1,17 @@
+{
+    "name": "hp/logger",
+    "autoload": {
+        "psr-4": {
+            "Hp\\Logger\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "onlyouness",
+            "email": "elyouness765@gmail.com"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "^1.0"
+    }
+}

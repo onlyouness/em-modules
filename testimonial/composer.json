@@ -1,0 +1,15 @@
+{
+    "name": "hp/testimonial",
+    "autoload": {
+        "psr-4": {
+            "Hp\\Testimonial\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "onlyouness",
+            "email": "elyouness765@gmail.com"
+        }
+    ],
+    "require": {}
+}

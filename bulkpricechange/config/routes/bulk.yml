@@ -1,0 +1,42 @@
+mm_bulk_index:
+  path: /
+  methods : GET
+  defaults:
+    _controller: Hp\BulkPriceChange\Controller\AdminBulkPriceController::indexAction
+    _disable_module_prefix: true
+    _legacy_controller : AdminBulkPriceController
+    _legacy_link: AdminBulkPriceController
+
+mm_bulk_create:
+  path: /create
+  methods : [GET,POST]
+  defaults:
+    _controller: Hp\BulkPriceChange\Controller\AdminBulkPriceController::createAction
+    _disable_module_prefix: true
+    _legacy_controller : AdminBulkPriceController
+    _legacy_link: AdminBulkPriceController
+
+mm_bulk_edit:
+  path: /edit/{id}
+  methods : [GET,POST]
+  defaults:
+    _controller: Hp\BulkPriceChange\Controller\AdminBulkPriceController::editAction
+    _disable_module_prefix: true
+    _legacy_controller : AdminBulkPriceController
+    _legacy_link: AdminBulkPriceController
+mm_bulk_delete:
+  path: /delete/{id}
+  methods : [GET,POST]
+  defaults:
+    _controller: Hp\BulkPriceChange\Controller\AdminBulkPriceController::deleteAction
+    _disable_module_prefix: true
+    _legacy_controller : AdminBulkPriceController
+    _legacy_link: AdminBulkPriceController
+mm_bulk_active:
+  path: /active/{id}
+  methods : [GET,POST]
+  defaults:
+    _controller: Hp\BulkPriceChange\Controller\AdminBulkPriceController::activeAction
+    _disable_module_prefix: true
+    _legacy_controller : AdminBulkPriceController
+    _legacy_link: AdminBulkPriceController

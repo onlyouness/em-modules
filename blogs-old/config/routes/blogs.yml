@@ -1,0 +1,94 @@
+mm_blogs_index:
+  path: /
+  methods: [GET]
+  defaults:
+    _controller: Hp\Blogs\Controller\BlogController::indexAction
+    _disable_module_prefix: true
+    _legacy_controller: BlogController
+    _legacy_link: BlogController
+
+mm_blogs_create:
+  path: /create
+  methods: [GET,POST]
+  defaults:
+    _controller: Hp\Blogs\Controller\BlogController::createAction
+    _disable_module_prefix: true
+    _legacy_controller: BlogController
+    _legacy_link: BlogController
+
+mm_blogs_edit:
+  path: /edit/{id}
+  methods: [GET,POST]
+  defaults:
+    _controller: Hp\Blogs\Controller\BlogController::editAction
+    _disable_module_prefix: true
+    _legacy_controller: BlogController
+    _legacy_link: BlogController
+
+mm_blogs_delete:
+  path: /delete/{id}
+  methods: [GET,POST]
+  defaults:
+    _controller: Hp\Blogs\Controller\BlogController::deleteAction
+    _disable_module_prefix: true
+    _legacy_controller: BlogController
+    _legacy_link: BlogController
+
+
+
+mm_blogs_fetch_product:
+  path: /products
+  methods: [GET,POST]
+  defaults:
+    _controller: Hp\Blogs\Controller\BlogController::fetchProducts
+    _disable_module_prefix: true
+    _legacy_controller: BlogController
+    _legacy_link: BlogController
+
+
+mm_sections_blogs_index:
+  path: /sections/{id}
+  methods: [GET,POST]
+  defaults:
+    _controller: Hp\Blogs\Controller\SectionController::indexAction
+    _disable_module_prefix: true
+    _legacy_controller: SectionController
+    _legacy_link: SectionController
+    id: null
+
+mm_sections_blogs_create:
+  path: /sections/{id}/section/create
+  methods: [GET,POST]
+  defaults:
+    _controller: Hp\Blogs\Controller\SectionController::createAction
+    _disable_module_prefix: true
+    _legacy_controller: SectionController
+    _legacy_link: SectionController
+
+mm_sections_blogs_edit:
+  path: /sections/{id}/section/edit/{blog_id}
+  methods: [GET,POST]
+  defaults:
+    _controller: Hp\Blogs\Controller\SectionController::editAction
+    _disable_module_prefix: true
+    _legacy_controller: SectionController
+    _legacy_link: SectionController
+
+mm_sections_blogs_delete:
+  path: /sections/{id}/section/delete/{blog_id}
+  methods: [GET,POST]
+  defaults:
+    _controller: Hp\Blogs\Controller\SectionController::deleteAction
+    _disable_module_prefix: true
+    _legacy_controller: SectionController
+    _legacy_link: SectionController
+
+mm_sections_blogs_positions:
+  path: /positions
+  methods: [GET,POST]
+  defaults:
+    _controller: Hp\Blogs\Controller\SectionController::positions
+    _disable_module_prefix: true
+    _legacy_controller: SectionController
+    _legacy_link: SectionController
+

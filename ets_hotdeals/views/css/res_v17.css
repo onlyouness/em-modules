@@ -1,0 +1,61 @@
+.ybc_countdown .ets_hotdeal_grid_items .ets-product-specific {
+  -moz-box-pack: start;
+  display: flex;
+  display: -o-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  justify-content: flex-start;
+  -o-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+  margin: 0;
+  position: static;
+  text-align: center;
+  width: auto;
+}
+.ets-product-specific .product-infomation-content {
+  box-shadow: 0 -5px 10px -5px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 -5px 10px -5px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 -5px 10px -5px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 -5px 10px -5px rgba(0, 0, 0, 0.2);
+}
+.ets_hotdeal_grid_items .product-miniature.js-product-miniature {
+  display: inline-block;
+    float: none;
+    margin: 0 0.625rem;
+    padding: 0;
+    width: 257px;
+}
+.ets-product-specific .product-flag {
+  margin-left: -0.4375rem;
+}
+@media (min-width: 992px){
+    .ets-product-specific .product-miniature.desktop_first_line {
+      clear: both;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .ets-product-specific .product-miniature.tableth_first_line {
+      clear: both;
+    }
+}
+@media (min-width: 544px) and (max-width: 767px){
+    .ets-product-specific .product-miniature.tablet_first_line {
+      clear: both;
+    }
+}
+@media (max-width: 543px){
+    .ets-product-specific .product-miniature.mobile_first_line {
+      clear: both;
+    }
+} 
+.ets-product-specific.slick-slider .product-miniature{
+    clear: none !important;
+}

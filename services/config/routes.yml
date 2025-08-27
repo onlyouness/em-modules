@@ -1,0 +1,6 @@
+service_ps:
+  resource: 'routes/service.yml'
+  prefix : '/prestashop/service'
+section_ps:
+  resource: 'routes/section.yml'
+  prefix : '/prestashop/section'

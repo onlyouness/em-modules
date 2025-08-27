@@ -1,0 +1,4 @@
+mm_flash_banners:
+  resource: 'routes/banners.yml'
+  prefix : '/flash/banners'
+

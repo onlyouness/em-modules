@@ -1,0 +1,26 @@
+services:
+  _defaults:
+    public: true
+  # FORM
+  faq.repository.faq_repository:
+        class: Hp\Faq\Repository\FaqRepository
+        factory: ['@doctrine.orm.default_entity_manager', getRepository]
+        arguments:
+            - Hp\Faq\Entity\Faq
+  faq.type.faq:
+    class: 'Hp\Faq\Form\FaqType'
+    parent: 'form.type.translatable.aware'
+    public: true
+    tags:
+      - { name: form.type}
+  faq.form.identifiable_object.builder:
+    class: 'PrestaShop\PrestaShop\Core\Form\IdentifiableObject\Builder\FormBuilder'
+    factory: 'prestashop.core.form.builder.form_builder_factory:create'
+    public: true
+    arguments:
+        - 'Hp\Faq\Form\FaqType'
+        - '@faq.form.identifiable_object.data_provider'
+  faq.form.identifiable_object.data_provider:
+    class: Hp\Faq\Form\Provider\FaqDataProvider
+    arguments:
+        - '@faq.repository.faq_repository'

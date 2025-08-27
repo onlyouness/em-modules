@@ -1,0 +1,44 @@
+mm_reassurances_index:
+  path: /
+  methods : GET
+  defaults:
+    _controller: Hp\Mmreassurances\Controller\AdminReassurances::indexAction
+    _disable_module_prefix: true
+    _legacy_controller : AdminReassurances
+    _legacy_link: AdminReassurances
+
+mm_reassurances_create:
+  path: /create
+  methods : [GET,POST]
+  defaults:
+    _controller: Hp\Mmreassurances\Controller\AdminReassurances::createAction
+    _disable_module_prefix: true
+    _legacy_controller : AdminReassurances
+    _legacy_link: AdminReassurances
+
+mm_reassurances_active:
+  path: /active/{id}
+  methods : [GET,POST]
+  defaults:
+    _controller: Hp\Mmreassurances\Controller\AdminReassurances::activeAction
+    _disable_module_prefix: true
+    _legacy_controller : AdminReassurances
+    _legacy_link: AdminReassurances
+
+mm_reassurances_delete:
+  path: /delete/{id}
+  methods : [GET,POST]
+  defaults:
+    _controller: Hp\Mmreassurances\Controller\AdminReassurances::deleteAction
+    _disable_module_prefix: true
+    _legacy_controller : AdminReassurances
+    _legacy_link: AdminReassurances
+
+mm_reassurances_edit:
+  path: /edit/{id}
+  methods : [GET,POST]
+  defaults:
+    _controller: Hp\Mmreassurances\Controller\AdminReassurances::editAction
+    _disable_module_prefix: true
+    _legacy_controller : AdminReassurances
+    _legacy_link: AdminReassurances

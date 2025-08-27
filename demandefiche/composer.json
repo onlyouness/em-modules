@@ -1,0 +1,15 @@
+{
+    "name": "hp/demandefiche",
+    "autoload": {
+        "psr-4": {
+            "Hp\\Demandefiche\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "onlyouness",
+            "email": "elyouness765@gmail.com"
+        }
+    ],
+    "require": {}
+}

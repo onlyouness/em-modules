@@ -1,0 +1,26 @@
+services:
+  _defaults:
+    public: true
+  # FORM
+  brandproduct.repository.brand_product_repository:
+        class: Hp\Brandproducts\Repository\BrandProductRepository
+        factory: ['@doctrine.orm.default_entity_manager', getRepository]
+        arguments:
+            - Hp\Brandproducts\Entity\BrandProduct
+  brandproduct.type.brandproduct:
+    class: 'Hp\Brandproducts\Form\BrandProductType'
+    parent: 'form.type.translatable.aware'
+    public: true
+    tags:
+      - { name: form.type}
+  brandproduct.form.identifiable_object.builder:
+    class: 'PrestaShop\PrestaShop\Core\Form\IdentifiableObject\Builder\FormBuilder'
+    factory: 'prestashop.core.form.builder.form_builder_factory:create'
+    public: true
+    arguments:
+        - 'Hp\Brandproducts\Form\BrandProductType'
+        - '@brandproduct.form.identifiable_object.data_provider'
+  brandproduct.form.identifiable_object.data_provider:
+    class: Hp\Brandproducts\Form\Provider\BrandProductDataProvider
+    arguments:
+        - '@brandproduct.repository.brand_product_repository'

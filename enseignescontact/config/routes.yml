@@ -1,0 +1,3 @@
+ps_check:
+  resource: 'routes/check.yml'
+  prefix : '/check'

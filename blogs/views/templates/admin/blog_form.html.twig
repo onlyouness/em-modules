@@ -1,0 +1,33 @@
+{% extends '@PrestaShop/Admin/layout.html.twig' %}
+
+{% block content %}
+	<div class="card">
+		<div class="card-header">
+			<h3>Create/Edit Blogs f</h3>
+		</div>
+		{{ form_start(form) }}
+		<div class="card-body">
+			{{ form_widget(form) }}
+			{% if image is defined and image is not empty %}
+				<div class="d-flex justify-content-end align-items-end">
+					<img style="max-width:600px;max-height:250px;object-fit:contain" src="/modules/blogs/img/{{ image }}">
+				</div>
+			{% endif %}
+		</div>
+		<div class="card-footer">
+			<div class="d-flex justify-content-between">
+				<a class="btn btn-secondary" href="{{ path('mm_blogs_index') }}">Cancel</a>
+				<button type="submit" class="btn btn-primary">Save Blog</button>
+			</div>
+			{{ form_end(form) }}
+		</div>
+	</div>
+
+{% endblock %}
+
+
+{% block javascripts %}
+	{{ parent() }}
+	<script src="{{asset(('../modules/blogs/views/js/blog.js'))}}"></script>
+
+{% endblock %}

@@ -1,0 +1,15 @@
+{
+    "name": "hp/collectionimages",
+    "autoload": {
+        "psr-4": {
+            "Hp\\Collectionimages\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "onlyouness",
+            "email": "elyouness765@gmail.com"
+        }
+    ],
+    "require": {}
+}

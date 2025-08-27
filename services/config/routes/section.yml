@@ -1,0 +1,26 @@
+oil_section_index:
+  path: /
+  methods : GET
+  defaults:
+    _controller: Hp\Services\Controller\ServiceController::indexAction
+    _disable_module_prefix: true
+    _legacy_controller : ServiceController
+    _legacy_link: ServiceController
+
+oil_section_create:
+  path: /create
+  methods : [GET,POST]
+  defaults:
+    _controller: Hp\Services\Controller\SectionController::createAction
+    _disable_module_prefix: true
+    _legacy_controller : SectionController
+    _legacy_link: SectionController
+
+oil_section_edit:
+  path: /edit/{id}
+  methods : [GET,POST]
+  defaults:
+    _controller: Hp\Services\Controller\SectionController::editAction
+    _disable_module_prefix: true
+    _legacy_controller : SectionController
+    _legacy_link: SectionController

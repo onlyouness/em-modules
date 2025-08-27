@@ -1,0 +1,19 @@
+services:
+  _defaults:
+    public: true
+  # FORM
+  enseignecontact.type.enseignecontact:
+    class: 'Developpement\Checkoutinformation\Form\EnseigneContactType'
+    parent: 'form.type.translatable.aware'
+    public: true
+    tags:
+      - { name: form.type}
+  enseignecontact.form.identifiable_object.builder:
+    class: 'PrestaShop\PrestaShop\Core\Form\IdentifiableObject\Builder\FormBuilder'
+    factory: 'prestashop.core.form.builder.form_builder_factory:create'
+    public: true
+    arguments:
+        - 'Developpement\Checkoutinformation\Form\EnseigneContactType'
+        - '@enseignecontact.form.identifiable_object.data_provider'
+  enseignecontact.form.identifiable_object.data_provider:
+    class: Developpement\Checkoutinformation\Form\Provider\EnseigneContactDataProvider

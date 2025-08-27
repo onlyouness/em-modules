@@ -1,0 +1,3 @@
+opentask:
+  resource: 'routes/tasks.yml'
+  prefix : '/prestashop/opentasks/tasks'

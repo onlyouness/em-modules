@@ -1,0 +1,3 @@
+files:
+  resource: 'routes/files.yml'
+  prefix : '/tech/uploadfiles'

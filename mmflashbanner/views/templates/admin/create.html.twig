@@ -1,0 +1,25 @@
+{% extends '@PrestaShop/Admin/layout.html.twig' %}
+
+{% block content %}
+<div class="card">
+    <div class="card-header">
+        <h3>Create\Edit Flash Banners</h3>
+    </div>
+    {{ form_start(form) }}
+    <div class="card-body">
+
+        {{ form_widget(form)}}
+        {{ form_rest(form) }}
+
+    </div>
+    <div class="card-footer">
+        <div class="d-flex justify-content-between align-items-center">
+            <a class="btn btn-secondary" href="{{ path('mm_flash_banners_index' )}}">Cancel</a>
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+        </div>
+          </div>
+    {{ form_end(form, {'render_rest': false}) }}
+</div>
+
+{% endblock %}

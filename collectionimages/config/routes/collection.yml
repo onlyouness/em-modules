@@ -1,0 +1,76 @@
+qb_collection_index:
+  path: /
+  methods : GET
+  defaults:
+    _controller: Hp\Collectionimages\Controller\AdminCollection::indexAction
+    _disable_module_prefix: true
+    _legacy_controller : AdminCollection
+    _legacy_link: AdminCollection
+
+qb_collection_create:
+  path: /create
+  methods : [GET,POST]
+  defaults:
+    _controller: Hp\Collectionimages\Controller\AdminCollection::createCollectionAction
+    _disable_module_prefix: true
+    _legacy_controller : AdminCollection
+    _legacy_link: AdminCollection
+
+qb_collection_edit:
+  path: /edit/{id}
+  methods : [GET,POST]
+  defaults:
+    _controller: Hp\Collectionimages\Controller\AdminCollection::editCollectionAction
+    _disable_module_prefix: true
+    _legacy_controller : AdminCollection
+    _legacy_link: AdminCollection
+
+qb_collection_delete:
+  path: /delete/{id}
+  methods : [GET,POST]
+  defaults:
+    _controller: Hp\Collectionimages\Controller\AdminCollection::deleteCollectionAction
+    _disable_module_prefix: true
+    _legacy_controller : AdminCollection
+    _legacy_link: AdminCollection
+
+qb_collectionimage_index:
+  path: /images/{id}
+  methods: [GET]
+  defaults:
+    _controller: Hp\Collectionimages\Controller\AdminCollectionImage::indexAction
+    _disable_module_prefix: true
+    _legacy_controller: AdminCollectionImage
+    _legacy_link: AdminCollectionImage
+    id: 0
+
+qb_collectionimage_create:
+  path: /images/{id}/create
+  methods : [GET,POST]
+  defaults:
+    _controller: Hp\Collectionimages\Controller\AdminCollectionImage::createAction
+    _disable_module_prefix: true
+    _legacy_controller : AdminCollectionImage
+    _legacy_link: AdminCollectionImage
+    id: 0
+
+qb_collectionimage_edit:
+  path: /images/{collectionId}/edit/{id}
+  methods : [GET,POST]
+  defaults:
+    _controller: Hp\Collectionimages\Controller\AdminCollectionImage::editAction
+    _disable_module_prefix: true
+    _legacy_controller : AdminCollectionImage
+    _legacy_link: AdminCollectionImage
+    id: 0
+    collectionId: 0
+
+qb_collectionimage_delete:
+  path: /images/{collectionId}/delete/{id}
+  methods : [GET,POST]
+  defaults:
+    _controller: Hp\Collectionimages\Controller\AdminCollectionImage::deleteAction
+    _disable_module_prefix: true
+    _legacy_controller : AdminCollectionImage
+    _legacy_link: AdminCollectionImage
+    id: 0

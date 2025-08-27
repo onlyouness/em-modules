@@ -1,0 +1,42 @@
+mm_group_banner_index:
+  path: /
+  methods : GET
+  defaults:
+    _controller: Hp\Groupbanner\Controller\AdminBannerGroupController::indexAction
+    _disable_module_prefix: true
+    _legacy_controller : AdminBannerGroupController
+    _legacy_link: AdminBannerGroupController
+
+mm_group_banner_create:
+  path: /create
+  methods : [GET,POST]
+  defaults:
+    _controller: Hp\Groupbanner\Controller\AdminBannerGroupController::createAction
+    _disable_module_prefix: true
+    _legacy_controller : AdminBannerGroupController
+    _legacy_link: AdminBannerGroupController
+
+mm_group_banner_edit:
+  path: /edit/{id}
+  methods : [GET,POST]
+  defaults:
+    _controller: Hp\Groupbanner\Controller\AdminBannerGroupController::editAction
+    _disable_module_prefix: true
+    _legacy_controller : AdminBannerGroupController
+    _legacy_link: AdminBannerGroupController
+mm_group_banner_delete:
+  path: /delete/{id}
+  methods : [GET,POST]
+  defaults:
+    _controller: Hp\Groupbanner\Controller\AdminBannerGroupController::deleteAction
+    _disable_module_prefix: true
+    _legacy_controller : AdminBannerGroupController
+    _legacy_link: AdminBannerGroupController
+mm_group_banner_active:
+  path: /active/{id}
+  methods : [GET,POST]
+  defaults:
+    _controller: Hp\Groupbanner\Controller\AdminBannerGroupController::activeAction
+    _disable_module_prefix: true
+    _legacy_controller : AdminBannerGroupController
+    _legacy_link: AdminBannerGroupController

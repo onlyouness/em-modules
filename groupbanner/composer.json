@@ -1,0 +1,15 @@
+{
+    "name": "hp/groupbanner",
+    "autoload": {
+        "psr-4": {
+            "Hp\\Groupbanner\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "youness",
+            "email": "elyouness765@gmail.com"
+        }
+    ],
+    "require": {}
+}

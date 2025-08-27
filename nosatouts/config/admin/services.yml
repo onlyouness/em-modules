@@ -1,0 +1,26 @@
+services:
+  _defaults:
+    public: true
+  # FORM
+  atout.repository.banner_repository:
+        class: Hp\Nosatouts\Repository\AtoutRepository
+        factory: ['@doctrine.orm.default_entity_manager', getRepository]
+        arguments:
+            - Hp\Nosatouts\Entity\NosAtout
+  atout.type.atout:
+    class: 'Hp\Nosatouts\Form\AtoutType'
+    parent: 'form.type.translatable.aware'
+    public: true
+    tags:
+      - { name: form.type}
+  atout.form.identifiable_object.builder:
+    class: 'PrestaShop\PrestaShop\Core\Form\IdentifiableObject\Builder\FormBuilder'
+    factory: 'prestashop.core.form.builder.form_builder_factory:create'
+    public: true
+    arguments:
+        - 'Hp\Nosatouts\Form\AtoutType'
+        - '@atout.form.identifiable_object.data_provider'
+  atout.form.identifiable_object.data_provider:
+    class: Hp\Nosatouts\Form\Provider\AtoutDataProvider
+    arguments:
+        - '@atout.repository.banner_repository'

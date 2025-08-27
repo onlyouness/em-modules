@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>b2buploadfiles</name>
+    <displayName><![CDATA[B2B file upload]]></displayName>
+    <version><![CDATA[1.0.0]]></version>
+    <description><![CDATA[Helps you save file of your new customer]]></description>
+    <author><![CDATA[Youness Major media]]></author>
+    <tab><![CDATA[front_office_features]]></tab>
+    <is_configurable>0</is_configurable>
+    <need_instance>0</need_instance>
+</module>

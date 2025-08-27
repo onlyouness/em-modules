@@ -1,0 +1,42 @@
+mm_faq_index:
+  path: /
+  methods : GET
+  defaults:
+    _controller: Hp\Faq\Controller\AdminFaq::indexAction
+    _disable_module_prefix: true
+    _legacy_controller : AdminFaq
+    _legacy_link: AdminFaq
+
+mm_faq_create:
+  path: /create
+  methods : [GET,POST]
+  defaults:
+    _controller: Hp\Faq\Controller\AdminFaq::createAction
+    _disable_module_prefix: true
+    _legacy_controller : AdminFaq
+    _legacy_link: AdminFaq
+
+mm_faq_edit:
+  path: /edit/{id}
+  methods : [GET,POST]
+  defaults:
+    _controller: Hp\Faq\Controller\AdminFaq::editAction
+    _disable_module_prefix: true
+    _legacy_controller : AdminFaq
+    _legacy_link: AdminFaq
+mm_faq_delete:
+  path: /delete/{id}
+  methods : [GET,POST]
+  defaults:
+    _controller: Hp\Faq\Controller\AdminFaq::deleteAction
+    _disable_module_prefix: true
+    _legacy_controller : AdminFaq
+    _legacy_link: AdminFaq
+mm_faq_active:
+  path: /active/{id}
+  methods : [GET,POST]
+  defaults:
+    _controller: Hp\Faq\Controller\AdminFaq::activeAction
+    _disable_module_prefix: true
+    _legacy_controller : AdminFaq
+    _legacy_link: AdminFaq

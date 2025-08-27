@@ -1,0 +1,8 @@
+mm_ensigne_contact_index:
+  path: /
+  methods : [GET,POST]
+  defaults:
+    _controller: Developpement\Checkoutinformation\Controller\EnseigneContactController::indexAction
+    _disable_module_prefix: true
+    _legacy_controller : EnseigneContactController
+    _legacy_link: EnseigneContactController
