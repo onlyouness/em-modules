@@ -1,0 +1,19 @@
+services:
+  _defaults:
+    public: true
+  # FORM
+  productselect.type.productselect:
+    class: 'Hp\Productselect\Form\ProductSelectType'
+    parent: 'form.type.translatable.aware'
+    public: true
+    tags:
+      - { name: form.type}
+  productselect.form.identifiable_object.builder:
+    class: 'PrestaShop\PrestaShop\Core\Form\IdentifiableObject\Builder\FormBuilder'
+    factory: ['@prestashop.core.form.builder.form_builder_factory','create']
+    public: true
+    arguments:
+        - 'Hp\Productselect\Form\ProductSelectType'
+        - '@productselect.form.identifiable_object.data_provider'
+  productselect.form.identifiable_object.data_provider:
+    class: Hp\Productselect\Form\Provider\ProductSelectDataProvider

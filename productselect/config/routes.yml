@@ -1,0 +1,3 @@
+ps_faq:
+  resource: 'routes/productselect.yml'
+  prefix : '/productselect'

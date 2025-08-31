@@ -1,0 +1,44 @@
+mm_productselect_index:
+  path: /
+  methods : [GET,POST]
+  defaults:
+    _controller: Hp\Productselect\Controller\AdminProductSelect::indexAction
+    _disable_module_prefix: true
+    _legacy_controller : AdminProductSelect
+    _legacy_link: AdminProductSelect
+mm_productselect_create:
+  path: /create
+  methods : [GET,POST]
+  defaults:
+    _controller: Hp\Productselect\Controller\AdminProductSelect::createAction
+    _disable_module_prefix: true
+    _legacy_controller : AdminProductSelect
+    _legacy_link: AdminProductSelect
+mm_productselect_edit:
+  path: /edit/{id}
+  methods : [GET,POST]
+  defaults:
+    _controller: Hp\Productselect\Controller\AdminProductSelect::editAction
+    _disable_module_prefix: true
+    _legacy_controller : AdminProductSelect
+    _legacy_link: AdminProductSelect
+
+mm_productselect_delete:
+  path: /delete/{id}
+  methods : [GET,POST]
+  defaults:
+    _controller: Hp\Productselect\Controller\AdminProductSelect::deleteAction
+    _disable_module_prefix: true
+    _legacy_controller : AdminProductSelect
+    _legacy_link: AdminProductSelect
+mm_productselect_position:
+  path: /position
+  methods : [GET,POST]
+  defaults:
+    _controller: Hp\Productselect\Controller\AdminProductSelect::positionAction
+    _disable_module_prefix: true
+    _legacy_controller : AdminProductSelect
+    _legacy_link: AdminProductSelect
+
+
+
